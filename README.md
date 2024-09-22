@@ -4,7 +4,6 @@ Fatal crashes: each record is a fatal crash. Details include year, month, day of
 
 ## Table of Contents
 
-- [Criteria](#criteria)
 - [Data](#data)
 - [Libraries Used](#libraries-used)
 - [Results](#results)
@@ -76,6 +75,7 @@ The graph shows the trend of total road crashes in Australia from 1989 to 2023, 
 - This recent increase could be due to the rebound effect post-pandemic, as more vehicles returned to the road following COVID-19 restrictions. It may also be driven by new factors such as distractions from mobile devices or other technological impacts.
 
 Summary
+
 - The data show that road safety in Australia has significantly improved over the last 30 years, with crashes decreasing by over 50%, from 2800 in 1989 to 1269 in 2023.
 - While much of this reduction can be attributed to advancements in safety technology, better driver education, and stronger laws, the slight rise in recent years warrants further investigation.
 
@@ -87,9 +87,60 @@ Statistical Insights
 
 <br>
 
-<b> Q2: Anova test: Did the variance in monthly road fatalities differ significantly between Australian states during the COVID-19 lockdown period (March 2020 to December 2021)?
+<b> Q2: Anova test: Did the variance in monthly road fatalities differ significantly between Australian states during the COVID-19 lockdown period (March 2020 to December 2021)? </b>
 
-Null Hypothesis: There was no variance across States’ road fatalities across the 3 years of Covid month by month. </b>
+- Null Hypothesis (H0): The variance in monthly road fatalities between Australian states during the COVID-19 lockdown period is the same.
+- Alternative Hypothesis (H1): There is a significant difference in the variance of monthly fatalities between at least two Australian states during the lockdown.
+
+Box Plot: Distribution of Monthly Road Fatalities Across States
+
+![](images/covid_monthly_avg_states.png)
+
+- Key Insights:
+    - The box plot shows the distribution of monthly fatalities of each state. NSW and VIC exhibit broader ranges of fatalities, while states like TAS and NT show narrower ranges.
+    - Outliers can be observed in several states, indicating months where fatalities significantly deviated from the median.
+- Implications:
+    - This visualisation highlights that the distribution of fatalities differs between states, suggesting that factors such as state-specific lockdown measures or traffic patterns may have impacted fatalities differently.
+
+
+Time Series Plot: Monthly Road Fatalities Over Time Across States
+
+![](images/covid_monthly_states.png)
+
+- Key Insights:
+    - This plot shows how fatalities evolved month by month for each state. States like NSW and VIC experienced noticeable fluctuations, particularly in late 2020 and early 2021, whereas states like Tasmania had more stable patterns.
+- Implications:
+    - The temporal trend helps identify periods where road fatalities either spiked or declined, reflecting potential impacts of varying lockdown policies and public health restrictions.
+    - Splitting the time series into individual state subplots improves clarity, making it easier to track trends within each state.
+    
+ANOVA Results
+- F-value: 54.74
+- p-value: 7.46 × 10^−25
+ 
+Key Statistical Findings:
+- The p-value is significantly lower than 0.05, indicating that we reject the null hypothesis. This means there is a statistically significant difference in the variance of monthly road fatalities across Australian states during the COVID-19 lockdown.
+- The F-value of 54.74 further supports that the differences in variances are substantial across the states.
+
+- Findings from Visualisations:
+    - The box plot and bar chart clearly show that states like NSW and VIC had higher and more varied road fatalities compared to smaller states such as TAS and NT.
+    - The time series plot and heatmap reveal that fatalities not only differed by state but also fluctuated across different months during the lockdown.
+
+- Statistical Analysis:
+    - The ANOVA test confirmed that the variance in monthly fatalities was not consistent across states, with significant differences observed between them. This suggests that factors like lockdown stringency, traffic enforcement, and road conditions likely varied significantly from state to state.
+
+- Professional Implications:
+    - The findings suggest that targeted interventions could have been more effective if tailored to individual states' conditions, such as more stringent road safety campaigns or traffic law enforcement during high-risk months.
+    - Understanding the temporal and state-wise variance in road fatalities can help policymakers and traffic safety officials develop more region-specific strategies for improving road safety during future crises or restrictions.
+
+Conclusion:
+The analysis of monthly road fatalities across Australian states during the COVID-19 lockdown period revealed substantial differences in both the distribution and trends of fatalities between states. Supported by visualizations and the ANOVA test, it is evident that these differences are statistically significant. Policymakers and public safety officials may benefit from considering these insights when addressing state-specific traffic safety measures in similar situations moving forward.
+
+
+
+
+
+
+
 
 <br>
 
