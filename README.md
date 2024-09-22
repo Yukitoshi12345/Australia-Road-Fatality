@@ -28,13 +28,13 @@ Fatal crashes: each record is a fatal crash. Details include year, month, day of
 | Road User                     | Describes the type of road user involved in the crash (e.g., pedestrian, driver, motorcyclist). This helps classify the type of participants in the crash.                               |
 | Gender                        | The gender of the person involved in the fatality (Male/Female). This is useful for demographic analysis of fatalities.                                                                  |
 | Age                           | The age of the person involved in the crash. It provides further demographic insights into the people involved in fatal crashes.                                                         |
-| National Remoteness Areas     | Classifies the location of the crash based on the remoteness of the area (e.g., Major Cities, Inner Regional, Outer Regional, etc.). This helps analyze urban vs. rural crashes.         |
+| National Remoteness Areas     | Classifies the location of the crash based on the remoteness of the area (e.g., Major Cities, Inner Regional, Outer Regional, etc.). This helps analyse urban vs. rural crashes.         |
 | SA4 Name 2021                 | Statistical Area Level 4, a geographic region based on the 2021 census, representing large regions in Australia. This gives detailed geographic information.                             |
 | National LGA Name 2021        | Local Government Area name based on 2021 census data. This provides a finer geographic classification.                                                                                   |
 | National Road Type            | The classification of the road type where the crash occurred (e.g., Arterial Road, Collector Road, Sub-arterial Road). It helps to understand the infrastructure where crashes occurred. |
-| Christmas Period              | Indicates whether the crash occurred during the Christmas holiday period (Yes/No). Useful for analyzing seasonal effects on crashes.                                                     |
+| Christmas Period              | Indicates whether the crash occurred during the Christmas holiday period (Yes/No). Useful for analysing seasonal effects on crashes.                                                     |
 | Easter Period                 | Indicates whether the crash occurred during the Easter holiday period (Yes/No).                                                                                                          |
-| Age Group                     | Groups the ages of the individuals involved into categories (e.g., 18_to_25, 40_to_64). This is helpful for broader demographic analysis.                                                |
+| Age Group                     | Groups the ages of the individuals involved into categories (e.g., 18 to 25, 40 to 64). This is helpful for broader demographic analysis.                                                |
 | Day of week                   | Indicates whether the crash occurred on a weekday or weekend. This categorisation helps in analysing crash patterns across workdays and weekends.                                        |
 | Time of day                   | Groups the crash time into broad categories like "Day" or "Night" to identify time-based patterns in fatalities.                                                                         |
 
@@ -47,7 +47,7 @@ Fatal crashes: each record is a fatal crash. Details include year, month, day of
 
 ## Results
 
-<b> Q1: What is the general trend for road fatalities in Australia over the past 30 years? </b>
+<b> Q1: What is the general trend for road fatalities in Australia over the past 35 years? </b>
 
 ![](images/road_fatalities_trend.png)
 
@@ -60,7 +60,7 @@ The graph shows the trend of total road crashes in Australia from 1989 to 2023, 
 
 2. Fluctuations in Decline:
 - The overall trend is downward, but there are periods of stability and slight increases:
-    - After the sharp decline between 1989 and 1992, crashes stabilized around 1900-2000 crashes per year between 1992 and 1997.
+    - After the sharp decline between 1989 and 1992, crashes stabilised around 1900-2000 crashes per year between 1992 and 1997.
     - From 1998 to 2010, there was a continued decrease in crashes, with numbers dropping from 1755 in 1998 to a low of 1277 in 2011.
     - Post-2011, crashes continued to decline, reaching a low of 1097 crashes in 2020.
 - After 2020, there was a slight uptick in crashes, rising to 1269 in 2023.
@@ -68,7 +68,7 @@ The graph shows the trend of total road crashes in Australia from 1989 to 2023, 
 3. Implications of the Decline:
 - The consistent reduction in road crashes can likely be attributed to several factors:
     - Improved road safety measures: Better road infrastructure, stricter traffic law enforcement, and increased awareness of road safety likely contributed to this reduction.
-    - Technological advances: The development of safer vehicle technologies (such as airbags, anti-lock braking systems, and electronic stability control) likely played a significant role.
+    - Technological Advances: The development of safer vehicle technologies (such as airbags, anti-lock braking systems, and electronic stability control) likely played a significant role.
     - Government intervention: Policies such as lower speed limits, mandatory seatbelt usage, and zero-tolerance for drink-driving helped reduce crashes.
 
 4. Recent Stability and Slight Uptick:
@@ -87,7 +87,8 @@ Statistical Insights
 
 <br>
 
-<b> Q2: Anova test: Was the variance in States’ road fatalities month by month during covid lockdown following a similar variance?
+<b> Q2: Anova test: Did the variance in monthly road fatalities differ significantly between Australian states during the COVID-19 lockdown period (March 2020 to December 2021)?
+
 Null Hypothesis: There was no variance across States’ road fatalities across the 3 years of Covid month by month. </b>
 
 <br>
