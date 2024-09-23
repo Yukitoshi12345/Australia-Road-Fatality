@@ -93,8 +93,71 @@ Statistical Insights
 
 <b> Q2: Anova test: Did the variance in monthly road fatalities differ significantly between Australian states during the COVID-19 lockdown period (March 2020 to December 2021)? </b>
 
-- Null Hypothesis (H0): The variance in monthly road fatalities does not differ significantly between Australian states during the COVID-19 lockdown.
-- Alternative Hypothesis (H1): The variance in monthly road fatalities differs significantly between Australian states during the COVID-19 lockdown.
+<u> Bar Plot: Total Fatalities Across States </u>
+
+The bar plot below provides a comparison of the total number of road fatalities across Australian states during the COVID-19 lockdown period (March 2020 to December 2021).
+
+<br>
+
+![](images/Covid_Fatalities_State.png)
+
+The bar plot shows a single cumulative value for each state, summing up all fatalities over the lockdown period. It is clear that larger states, such as New South Wales (NSW) and Queensland (QLD), recorded the highest total fatalities. In contrast, smaller states like Australian Capital Territory (ACT) and Northern Territory (NT) had significantly fewer overall fatalities.
+
+While this plot offers an easy comparison of total fatalities across states, it doesn't provide insight into the month-to-month variability in fatalities or whether certain states experienced more volatility.
+
+<br>
+
+<u> Box Plot: Monthly Fatality Distribution per State </u>
+
+To explore how fatalities varied over time, the box plot below highlights the distribution of monthly road fatalities for each state, revealing variability, outliers, and the spread in the data.
+
+<br>
+
+![](images/Covid_Fatalities_Monthly_Stats.png)
+
+The box plot provides deeper insights into how fatalities fluctuated month-to-month in each state. For example:
+
+NSW had relatively consistent monthly fatalities, with fewer extreme outliers.
+Queensland, however, showed more significant variability, with certain months experiencing notably higher fatalities (indicated by a larger interquartile range and outliers).
+Smaller states like NT also showed higher fluctuations despite lower overall fatalities, suggesting certain months of heightened road risk.
+These differences indicate that road fatalities didn’t remain constant across the lockdown period and varied based on state-specific factors like population behavior, lockdown measures, and regional road safety conditions.
+
+<br>
+
+<u> ANOVA Test: Comparison of Variance in Fatalities Across States </u>
+
+To statistically test whether the variance in monthly road fatalities differed significantly between states, an ANOVA test was conducted.
+
+- Null Hypothesis (H0): There is no significant difference in the variance of monthly road fatalities between the Australian states.
+  - Mathematically, 𝐻0: 𝜎_1{^2}=𝜎_2{^2}=⋯=𝜎_𝑘^{2}, where 𝜎_1^{2},𝜎_2^{2},…,𝜎_𝑘^{2} are the variances in monthly road fatalities for each of the states.
+- Alternative Hypothesis (H1): At least one state's variance in monthly road fatalities is significantly different from the others.
+  - Mathematically, 𝐻1: 𝜎_𝑖^{2}≠𝜎_𝑗^{2} for at least one pair of states.
+  
+<br>
+
+![](images/ANOVA_Covid_Fatalities.png)
+
+
+Since the p-value is much lower than 0.05, we reject the null hypothesis. This means that the variance in monthly road fatalities did, in fact, differ significantly between the Australian states during the COVID-19 lockdown period. The large F-statistic suggests that the variance between groups (states) is much higher than the variance within groups (month-to-month fatalities within each state).
+
+
+<u>Implications</u>
+
+The ANOVA test provides strong evidence that the variance in monthly road fatalities was not uniform across states. States such as Queensland and NT exhibited more volatility in monthly fatalities, while others, like NSW, had more consistent figures over the lockdown period.
+
+This variance could be attributed to several factors:
+
+- Lockdown measures: Different states implemented varying degrees of travel restrictions and lockdowns, which may have impacted road usage and safety.
+- Regional behaviours: States with more rural or open-road driving may have seen spikes in fatalities as restrictions fluctuated or relaxed.
+- Population density: Larger states like NSW, despite having a higher total, may have had fewer spikes due to stricter enforcement or more regular traffic patterns.
+
+<br>
+
+<u> Conclusion</u>
+
+In conclusion, the results of the ANOVA test and visualizations underscore the importance of state-specific road safety measures during periods of restricted movement, such as lockdowns. The significant differences in variance highlight the need for targeted interventions in states that experienced more variability and volatility in road fatalities. Policymakers should investigate further into the factors contributing to these differences to better prepare for future crises and enhance road safety measures during emergency situations.
+
+The bar plot showed the cumulative fatality totals, while the box plot revealed the monthly variability within each state. The ANOVA test statistically confirmed that these variances were significant, providing valuable insights for future safety strategies.
 
 <br>
 
