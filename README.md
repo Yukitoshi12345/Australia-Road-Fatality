@@ -132,7 +132,7 @@ To statistically test whether the variance in monthly road fatalities differed s
   - Mathematically, 𝐻0: 𝜎_1{^2}=𝜎_2{^2}=⋯=𝜎_𝑘^{2}, where 𝜎_1^{2},𝜎_2^{2},…,𝜎_𝑘^{2} are the variances in monthly road fatalities for each of the states.
 - Alternative Hypothesis (H1): At least one state's variance in monthly road fatalities is significantly different from the others.
   - Mathematically, 𝐻1: 𝜎_𝑖^{2}≠𝜎_𝑗^{2} for at least one pair of states.
-  
+
 <br>
 
 ![](images/ANOVA_Covid_Fatalities.png)
@@ -161,7 +161,7 @@ The bar plot showed the cumulative fatality totals, while the box plot revealed 
 
 <br>
 
-<b> Q3: In the past four years, is there a noticeable trend in the number of road fatalities based on various factors such as speed limits, age, time of day, day of the week, and type of road? </b>
+<b> Q3: In the past five years, is there a noticeable trend in the number of road fatalities based on various factors such as speed limits, age, time of day, day of the week, and type of road? </b>
 
 <br>
 
