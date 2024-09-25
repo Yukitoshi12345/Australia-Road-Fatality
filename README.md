@@ -165,6 +165,18 @@ The bar plot showed the cumulative fatality totals, while the box plot revealed 
 
 <br>
 
+![](images/speed_limit_recent_years.png)
+
+![](images/age_group_recent_years.png)
+
+![](images/time_of_day_recent_years.png)
+
+![](images/day_of_week_recent_years.png)
+
+![](images/road_type_recent_years.png)
+
+
+
 <b> Q4: Specifically in Victoria, did the introduction of booze buses and mobile speed radars have a significant impact on road fatalities? </b>
 
 <br>
