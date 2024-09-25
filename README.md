@@ -12,6 +12,8 @@ Fatal crashes: each record is a fatal crash. Details include year, month, day of
 
 ## Data
 
+This project utilises an Excel dataset to analyze road fatalities in Australia, using historical crash data sourced from the Australian Bureau of Infrastructure and Transport Research Economics (BITRE). The dataset, available through the Fatal Road Crash Database (https://www.bitre.gov.au/statistics/safety/fatal_road_crash_database), provides detailed information on fatal road accidents across the country. By examining various factors, this project applies data analysis techniques to uncover critical trends and patterns. These insights are aimed at supporting road safety strategies and identifying areas for targeted intervention to reduce fatalities.
+
 | Column                        | Description                                                                                                                                                                              |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Crash ID                      | A unique identifier for each crash in the dataset. It helps distinguish between different crashes.                                                                                       |
@@ -167,6 +169,7 @@ The bar plot showed the cumulative fatality totals, while the box plot revealed 
 The analysis of road fatalities over the past five years (2019-2023) reveals significant patterns based on several factors, including speed limits, age, time of day, day of the week, and road type. Below is a breakdown of the trends and conclusions drawn from the graphs:
 
 <br>
+
 <b>Speed Limits:</b>
 
 <br>
@@ -252,7 +255,7 @@ Highways and local roads continue to see the majority of fatalities, emphasising
 
 ## References
 
-https://www.bitre.gov.au/statistics/safety/fatal_road_crash_database
+Data for this project was sourced from the Australian Bureau of Infrastructure and Transport Research Economics (BITRE) Fatal Road Crash Database, available at: https://www.bitre.gov.au/statistics/safety/fatal_road_crash_database.
 
 ## License
 
