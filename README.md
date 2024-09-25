@@ -93,7 +93,7 @@ Statistical Insights
 
 <b> Q2: Anova test: Did the variance in monthly road fatalities differ significantly between Australian states during the COVID-19 lockdown period (March 2020 to December 2021)? </b>
 
-<u> Bar Plot: Total Fatalities Across States </u>
+<b> Bar Plot: Total Fatalities Across States </b>
 
 The bar plot below provides a comparison of the total number of road fatalities across Australian states during the COVID-19 lockdown period (March 2020 to December 2021).
 
@@ -107,7 +107,7 @@ While this plot offers an easy comparison of total fatalities across states, it 
 
 <br>
 
-<u> Box Plot: Monthly Fatality Distribution per State </u>
+<b> Box Plot: Monthly Fatality Distribution per State </b>
 
 To explore how fatalities varied over time, the box plot below highlights the distribution of monthly road fatalities for each state, revealing variability, outliers, and the spread in the data.
 
@@ -124,7 +124,7 @@ These differences indicate that road fatalities didn’t remain constant across 
 
 <br>
 
-<u> ANOVA Test: Comparison of Variance in Fatalities Across States </u>
+<b> ANOVA Test: Comparison of Variance in Fatalities Across States </b>
 
 To statistically test whether the variance in monthly road fatalities differed significantly between states, an ANOVA test was conducted.
 
@@ -141,7 +141,7 @@ To statistically test whether the variance in monthly road fatalities differed s
 Since the p-value is much lower than 0.05, we reject the null hypothesis. This means that the variance in monthly road fatalities did, in fact, differ significantly between the Australian states during the COVID-19 lockdown period. The large F-statistic suggests that the variance between groups (states) is much higher than the variance within groups (month-to-month fatalities within each state).
 
 
-<u>Implications</u>
+<b>Implications</b>
 
 The ANOVA test provides strong evidence that the variance in monthly road fatalities was not uniform across states. States such as Queensland and NT exhibited more volatility in monthly fatalities, while others, like NSW, had more consistent figures over the lockdown period.
 
@@ -153,7 +153,7 @@ This variance could be attributed to several factors:
 
 <br>
 
-<u> Conclusion</u>
+<b> Conclusion</b>
 
 In conclusion, the results of the ANOVA test and visualizations underscore the importance of state-specific road safety measures during periods of restricted movement, such as lockdowns. The significant differences in variance highlight the need for targeted interventions in states that experienced more variability and volatility in road fatalities. Policymakers should investigate further into the factors contributing to these differences to better prepare for future crises and enhance road safety measures during emergency situations.
 
@@ -164,18 +164,85 @@ The bar plot showed the cumulative fatality totals, while the box plot revealed 
 <b> Q3: In the past five years, is there a noticeable trend in the number of road fatalities based on various factors such as speed limits, age, time of day, day of the week, and type of road? </b>
 
 <br>
+The analysis of road fatalities over the past five years (2019-2023) reveals significant patterns based on several factors, including speed limits, age, time of day, day of the week, and road type. Below is a breakdown of the trends and conclusions drawn from the graphs:
+
+<br>
+<b>Speed Limits:</b>
+
+<br>
 
 ![](images/speed_limit_recent_years.png)
 
+Observations:
+- High fatality rates are observed in speed limits ranging from 90 km/h to 100 km/h, which are typically associated with highways and major roads.
+- Lower speed limits (below 40 km/h) show significantly fewer fatalities, as expected in areas with more controlled traffic, such as urban and residential areas.
+- The fatalities remain relatively consistent across years for the same speed limit, with slight year-on-year variations.
+
+Conclusion:
+
+The analysis highlights that higher speed limits are strongly correlated with higher fatality rates. This emphasises the need for stricter safety regulations on high-speed roads, particularly highways.
+
+<br>
+<b>Age Groups:</b>
+
+<br>
+
 ![](images/age_group_recent_years.png)
+
+Observations:
+- The 40 to 64 age group consistently records the highest fatalities each year, followed by the 26 to 39 age group.
+- The 0 to 16 age group and 75 and older group have the fewest fatalities, though the numbers for these groups have been stable across the years.
+
+Conclusion:
+
+Middle-aged drivers (40 to 64 years old) remain the most vulnerable group in terms of road fatalities, possibly due to higher exposure (commuting and longer drives). There could be value in targeted safety campaigns for these age groups.
+
+<br>
+<b>Time of Day:</b>
+
+<br>
 
 ![](images/time_of_day_recent_years.png)
 
+Observations:
+- A noticeable trend is that more fatalities occur during the daytime compared to nighttime.
+- The gap between day and night fatalities has remained consistent, with daytime accidents consistently surpassing nighttime accidents across all years.
+
+Conclusion:
+
+Despite increased visibility, the day remains a more dangerous time for road fatalities, likely due to higher traffic volumes during the day. This trend highlights the need for continuous safety measures even during daylight hours.
+
+<br>
+<b>Day of the Week:</b>
+
+<br>
+
 ![](images/day_of_week_recent_years.png)
+
+Observations:
+- Saturday is the most fatal day of the week, accounting for 17.3% of all fatalities, followed by Sunday at 15.7%.
+- Monday records the fewest fatalities, at 11.5%.
+
+Conclusion:
+
+Weekends, particularly Saturday, consistently show the highest fatality rates, likely due to increased recreational travel, social events, and possibly alcohol-related incidents. This suggests a need for enhanced weekend enforcement and awareness campaigns around road safety.
+
+<br>
+<b>Road Type:</b>
+
+<br>
 
 ![](images/road_type_recent_years.png)
 
+Observations:
+- National or State Highways account for the largest share of fatalities, at 30.0%, followed by Local Roads at 21.8%.
+- Access roads account for the fewest fatalities, with only 1.6%.
 
+Conclusion:
+
+Highways and local roads continue to see the majority of fatalities, emphasising the need for sustained safety measures on these road types. Improvements in road design, better signage, and stricter speed enforcement could be key areas to target.
+
+<br>
 
 <b> Q4: Specifically in Victoria, did the introduction of booze buses and mobile speed radars have a significant impact on road fatalities? </b>
 
