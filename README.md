@@ -247,11 +247,11 @@ Highways and local roads continue to see the majority of fatalities, emphasising
 
 <br>
 
-<b> Q4: Specifically in Victoria, did the introduction of booze buses and mobile speed radars have a significant impact on road fatalities? </b>
+<b>Q4: In Sydney, did the implementation of mobile speed cameras (1997), Random Drug Testing (2006), increased penalties such as the double demerit point system (1997), and other post-1989 road safety measures lead to a significant reduction in road fatalities?</b>
 
+Random Breath Testing was 1982.
 <br>
 
-<b> Q5: In 1999, Victoria rewrote various road regulations. Did this change have a significant impact on road fatalities? How did this compare to NSW across the same period? </b>
 
 ## References
 
