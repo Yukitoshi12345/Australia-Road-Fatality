@@ -131,17 +131,15 @@ These differences indicate that road fatalities didn’t remain constant across 
 To statistically test whether the variance in monthly road fatalities differed significantly between states, an ANOVA test was conducted.
 
 - Null Hypothesis (H0): There is no significant difference in the variance of monthly road fatalities between the Australian states.
-  - Mathematically, 𝐻0: 𝜎_1{^2}=𝜎_2{^2}=⋯=𝜎_𝑘^{2}, where 𝜎_1^{2},𝜎_2^{2},…,𝜎_𝑘^{2} are the variances in monthly road fatalities for each of the states.
+  - Mathematically, 𝐻0: 𝜎*1{^2}=𝜎_2{^2}=⋯=𝜎*𝑘^{2}, where 𝜎*1^{2},𝜎_2^{2},…,𝜎*𝑘^{2} are the variances in monthly road fatalities for each of the states.
 - Alternative Hypothesis (H1): At least one state's variance in monthly road fatalities is significantly different from the others.
-  - Mathematically, 𝐻1: 𝜎_𝑖^{2}≠𝜎_𝑗^{2} for at least one pair of states.
+  - Mathematically, 𝐻1: 𝜎*𝑖^{2}≠𝜎*𝑗^{2} for at least one pair of states.
 
 <br>
 
 ![](images/ANOVA_Covid_Fatalities.png)
 
-
 Since the p-value is much lower than 0.05, we reject the null hypothesis. This means that the variance in monthly road fatalities did, in fact, differ significantly between the Australian states during the COVID-19 lockdown period. The large F-statistic suggests that the variance between groups (states) is much higher than the variance within groups (month-to-month fatalities within each state).
-
 
 <b>Implications</b>
 
@@ -177,6 +175,7 @@ The analysis of road fatalities over the past five years (2019-2023) reveals sig
 ![](images/speed_limit_recent_years.png)
 
 Observations:
+
 - High fatality rates are observed in speed limits ranging from 90 km/h to 100 km/h, which are typically associated with highways and major roads.
 - Lower speed limits (below 40 km/h) show significantly fewer fatalities, as expected in areas with more controlled traffic, such as urban and residential areas.
 - The fatalities remain relatively consistent across years for the same speed limit, with slight year-on-year variations.
@@ -193,6 +192,7 @@ The analysis highlights that higher speed limits are strongly correlated with hi
 ![](images/age_group_recent_years.png)
 
 Observations:
+
 - The 40 to 64 age group consistently records the highest fatalities each year, followed by the 26 to 39 age group.
 - The 0 to 16 age group and 75 and older group have the fewest fatalities, though the numbers for these groups have been stable across the years.
 
@@ -208,6 +208,7 @@ Middle-aged drivers (40 to 64 years old) remain the most vulnerable group in ter
 ![](images/time_of_day_recent_years.png)
 
 Observations:
+
 - A noticeable trend is that more fatalities occur during the daytime compared to nighttime.
 - The gap between day and night fatalities has remained consistent, with daytime accidents consistently surpassing nighttime accidents across all years.
 
@@ -223,6 +224,7 @@ Despite increased visibility, the day remains a more dangerous time for road fat
 ![](images/day_of_week_recent_years.png)
 
 Observations:
+
 - Saturday is the most fatal day of the week, accounting for 17.3% of all fatalities, followed by Sunday at 15.7%.
 - Monday records the fewest fatalities, at 11.5%.
 
@@ -238,6 +240,7 @@ Weekends, particularly Saturday, consistently show the highest fatality rates, l
 ![](images/road_type_recent_years.png)
 
 Observations:
+
 - National or State Highways account for the largest share of fatalities, at 30.0%, followed by Local Roads at 21.8%.
 - Access roads account for the fewest fatalities, with only 1.6%.
 
@@ -247,11 +250,28 @@ Highways and local roads continue to see the majority of fatalities, emphasising
 
 <br>
 
-<b>Q4: In Sydney, did the implementation of mobile speed cameras (1997), Random Drug Testing (2006), increased penalties such as the double demerit point system (1997), and other post-1989 road safety measures lead to a significant reduction in road fatalities?</b>
+<b>Q4: In Sydney, did the implementation of road safety measures lead to a significant reduction in road fatalities?</b>
 
-Random Breath Testing was 1982.
+To assess the effectiveness of major road safety interventions in Sydney, we analysed annual road fatality data from 1989 to 2023. Over this 35-year period, several key policy changes were implemented, including the introduction of speed cameras and double demerit points in the late 1990s, followed by random roadside drug testing (RDT) in 2006. The following graph segments the fatality data into three distinct eras based on these interventions, allowing us to observe how road fatalities have changed in response to each policy phase.
+
+![](images/road_fatalities_policy_era.png)
+
+Pre-1997 Period:
+
+From 1989 to 1996, Sydney experienced relatively high fatality numbers, with several years exceeding 600 deaths annually and peaking at over 900 in 1989. This period reflects the state before major interventions like speed cameras or double demerit enforcement. While there was a gradual decline throughout the early 1990s, the overall fatality count remained concerningly high, suggesting that existing policies were insufficient to achieve substantial reductions.
+
+Post-Speed Camera and Double Demerit Period (1997–2005):
+
+The orange bars represent the period following the introduction of speed cameras and double demerit points. During this phase, a clear downward trend is observed. Fatality numbers dropped below 600 and continued declining to near or below 500 in the early 2000s. This suggests a strong initial impact of these enforcement policies, likely due to increased driver caution and improved compliance with speed limits during holiday periods.
+
+Post-Random Drug Testing (2006 Onwards):
+
+From 2006 onwards (green bars), a further and more consistent decline in fatalities can be seen, with numbers stabilizing between approximately 300 and 400 deaths annually, and even dipping below 300 in recent years (e.g., during the COVID period). This indicates that additional enforcement measures, like random drug testing, likely compounded the impact of earlier interventions and contributed to continued improvements in road safety.
+
+Conclusion:
+
+Overall, the chart demonstrates that each phase of safety intervention, particularly the introduction of speed enforcement and drug testing, coincided with a meaningful reduction in road fatalities. While other external factors (like advancements in vehicle safety or temporary COVID-related traffic reductions) may have influenced the recent lows, the long-term trend strongly supports the conclusion that Sydney’s road safety measures have been effective in significantly reducing road fatalities over the last three decades.
 <br>
-
 
 ## References
 
