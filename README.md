@@ -284,6 +284,16 @@ Findings (summary):
 - Post‑2006: further decrease and continued negative slope (consistent with incremental effect of RDT).
 - See notebook Q4 cell outputs for exact coefficients, CIs and p‑values.
 
+Key IRR estimates (from notebook Q4):
+
+| Term       | IRR   | 95% CI         |
+| ---------- | ----- | -------------- |
+| post1997   | 1.104 | [0.632, 1.928] |
+| t_post1997 | 1.003 | [0.994, 1.013] |
+| post2006   | 0.876 | [0.547, 1.404] |
+| t_post2006 | 0.999 | [0.993, 1.006] |
+| YearC      | 0.944 | [0.865, 1.031] |
+
 Limitations:
 
 - Observational design; unmeasured confounders (vehicle tech, macro trends) may drive part of the effect.
