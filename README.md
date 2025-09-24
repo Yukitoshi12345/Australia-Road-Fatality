@@ -54,40 +54,40 @@ This project utilises an Excel dataset to analyze road fatalities in Australia, 
 
 The graph shows the trend of total fatal crashes in Australia from 1989 to 2023 (excluding 2024). The analysis also includes a smoothed 3‑year moving average and a log‑linear fitted trend, which both reinforce the clear long‑run decline. Below is a detailed summary and analysis based on the visualisation:
 
-1. Significant Decrease in Road Crashes Over Time:
+1. Significant Decrease in Fatal Crashes Over Time:
 
-- In 1989, there were approximately 2800 crashes per year.
-- By 2023, this number has decreased to about 1269 crashes, representing a reduction of over 50% in road crashes during the 35-year period.
-- The most substantial reduction occurred between 1989 and 1992, where crashes dropped from 2800 to 1974.
+- In 1989, there were approximately 2800 fatal crashes per year.
+- By 2023, this number has decreased to about 1269 fatal crashes, representing a reduction of over 50% during the 35-year period.
+- The most substantial reduction occurred between 1989 and 1992.
 
-2. Fluctuations in Decline:
+2. Fluctuations in the Decline:
 
 - The overall trend is downward, but there are periods of stability and slight increases:
-  - After the sharp decline between 1989 and 1992, crashes stabilised around 1900-2000 crashes per year between 1992 and 1997.
-  - From 1998 to 2010, there was a continued decrease in crashes, with numbers dropping from 1755 in 1998 to a low of 1277 in 2011.
-  - Post-2011, crashes continued to decline, reaching a low of 1097 crashes in 2020.
-- After 2020, there was a slight uptick in crashes, rising to 1269 in 2023.
+  - After the sharp decline between 1989 and 1992, totals stabilised around 1900–2000 fatal crashes per year between 1992 and 1997.
+  - From 1998 to 2010, there was a continued decrease, with a local low around 2011.
+  - Post-2011, totals continued to decline, reaching a low in 2020.
+- After 2020, there was a slight uptick, rising into 2023.
 
 3. Implications of the Decline:
 
-- The consistent reduction in road crashes can likely be attributed to several factors:
+- The consistent reduction in fatal crashes can likely be attributed to several factors:
   - Improved road safety measures: Better road infrastructure, stricter traffic law enforcement, and increased awareness of road safety likely contributed to this reduction.
   - Technological Advances: The development of safer vehicle technologies (such as airbags, anti-lock braking systems, and electronic stability control) likely played a significant role.
-  - Government intervention: Policies such as lower speed limits, mandatory seatbelt usage, and zero-tolerance for drink-driving helped reduce crashes.
+  - Government intervention: Policies such as lower speed limits, mandatory seatbelt usage, and zero-tolerance for drink-driving helped reduce fatal crashes.
 
 4. Recent Stability and Slight Uptick:
 
-- In the years between 2020 and 2023, there was a slight rise in the number of crashes, increasing from 1097 crashes in 2020 to 1269 in 2023.
+- In the years between 2020 and 2023, there was a slight rise in the number of fatal crashes.
 - This recent increase could be due to the rebound effect post-pandemic, as more vehicles returned to the road following COVID-19 restrictions. It may also be driven by new factors such as distractions from mobile devices or other technological impacts.
 
 Summary
 
-- The data show that road safety in Australia has significantly improved over the last 30 years, with crashes decreasing by over 50%, from 2800 in 1989 to 1269 in 2023.
+- The data show that road safety in Australia has significantly improved over the last 30 years, with fatal crashes decreasing by over 50% from 1989 to 2023.
 - While much of this reduction can be attributed to advancements in safety technology, better driver education, and stronger laws, the slight rise in recent years warrants further investigation.
 
 Statistical Insights
 
-- Time Series Analysis: The long-term downward trend suggests that safety measures have had a substantial positive impact in reducing crashes.
+- Time Series Analysis: The long-term downward trend suggests that safety measures have had a substantial positive impact in reducing fatal crashes.
 - Comparison: Comparing the peak crash periods of the early 1990s with the most recent years highlights a dramatic improvement in road safety.
 - Correlation: Further analysis could explore the relationship between crash trends and external factors, such as changes in vehicle technology, traffic enforcement policies, or driver behaviour over the years.
 
