@@ -50,9 +50,19 @@ This project utilises an Excel dataset to analyze road fatalities in Australia, 
 
 <b> Q1: What is the general trend for fatal crashes in Australia over the past 35 years? </b>
 
+Scope: Fatal crashes, 1989–2023 (2024 excluded).
+
 ![](images/road_fatalities_trend.png)
 
-The graph shows the trend of total fatal crashes in Australia from 1989 to 2023 (excluding 2024). The analysis also includes a smoothed 3‑year moving average and a log‑linear fitted trend, which both reinforce the clear long‑run decline. Below is a detailed summary and analysis based on the visualisation:
+The graph shows the trend of total fatal crashes in Australia from 1989 to 2023 (excluding 2024). The analysis also includes a smoothed 3‑year moving average and a log‑linear fitted trend, which both reinforce the clear long‑run decline.
+
+Headline metrics:
+
+- Relative decline (1989→2023): ~55.1%
+- CAGR (annualised): ~−2.33% per year
+- Log‑linear trend slope and p‑value are printed in the notebook output (Q1 cell) alongside the chart.
+
+Below is a detailed summary and analysis based on the visualisation:
 
 1. Significant Decrease in Fatal Crashes Over Time:
 
@@ -88,6 +98,7 @@ Summary
 Statistical Insights
 
 - Time Series Analysis: The long-term downward trend suggests that safety measures have had a substantial positive impact in reducing fatal crashes.
+- Reported Metrics: The notebook prints the relative decline (1989–2023), CAGR, and the log-linear trend slope with its p-value, alongside the 3-year moving average and fitted trend line.
 - Comparison: Comparing the peak crash periods of the early 1990s with the most recent years highlights a dramatic improvement in road safety.
 - Correlation: Further analysis could explore the relationship between crash trends and external factors, such as changes in vehicle technology, traffic enforcement policies, or driver behaviour over the years.
 
