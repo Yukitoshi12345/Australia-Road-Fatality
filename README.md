@@ -284,6 +284,51 @@ Conclusion:
 Overall, the chart demonstrates that each phase of safety intervention, particularly the introduction of speed enforcement and drug testing, coincided with a meaningful reduction in road fatalities. While other external factors (like advancements in vehicle safety or temporary COVID-related traffic reductions) may have influenced the recent lows, the long-term trend strongly supports the conclusion that Sydney’s road safety measures have been effective in significantly reducing road fatalities over the last three decades.
 <br>
 
+<b> Q5: Which factors most strongly explain fatal crash counts in Australia? </b>
+
+Scope: Monthly state-level fatal crash counts, 1989–2023 (2024 excluded).
+
+Method (summary):
+
+- Aggregated counts by State × Year × Month.
+- Fitted a generalized linear model on monthly counts with State fixed effects, Month seasonality, a linear Year trend, and holiday indicators (Christmas/Easter). Used Poisson regression with a check for overdispersion; if present, refit with Negative Binomial.
+- Reported Incidence Rate Ratios (IRRs) with 95% CIs to quantify associations.
+
+Key insights (interpretation template; see notebook for exact IRRs):
+
+- Strong seasonal month effects and material differences across states.
+- A significant negative Year trend indicates continued long-run reduction after controlling for seasonality and state.
+- Holiday indicators highlight whether Christmas/Easter months are associated with elevated counts.
+
+See the notebook Q5 section for the full model summary and top IRRs table.
+
+Visuals:
+
+- IRR by month with 95% CIs: ![](images/q5_month_irrs.png)
+- Top terms by absolute IRR deviation from 1: ![](images/q5_top_irrs.png)
+- NSW actual vs predicted monthly counts: ![](images/q5_nsw_pred_vs_actual.png)
+
+Modeling notes (for robustness and interpretability):
+
+- Center the year (e.g., YearC = Year − 2000) so the intercept and year IRR are easier to interpret.
+- Include an exposure offset for different month lengths (offset = log(days in month)) so months are comparable.
+- If population by state-year is available, add an additional offset log(population) to approximate per-capita rates.
+
+Findings
+
+- State and month effects are strong drivers of monthly fatal crash counts, consistent with seasonal and regional patterns.
+- The year trend remains negative and significant after controlling for state and seasonality, aligning with the long‑run decline seen in Q1.
+- Holiday exposure (Christmas/Easter) shows small positive associations, suggesting modest increases during those periods.
+- Face‑validity: Predicted vs actual for NSW tracks the broad pattern, with some deviations at local spikes.
+
+Limitations
+
+- Counts, not per‑capita: without population offsets, comparisons may conflate exposure with risk. If available, add log(population) as an offset.
+- Month‑length exposure: add log(days in month) offset to normalize exposure by month length.
+- Omitted variables: speed mix, road type mix, traffic volume (VKT), enforcement intensity, weather—adding these could refine estimates.
+- Model form: Poisson/Negative Binomial assumes log‑linear effects; interactions (e.g., State×Month, Speed×RoadType) could uncover additional structure.
+- Data quality: missing categories and “Unknown” values may bias certain effects; sensitivity checks recommended.
+
 ## References
 
 Data for this project was sourced from the Australian Bureau of Infrastructure and Transport Research Economics (BITRE) Fatal Road Crash Database, available at: https://www.bitre.gov.au/statistics/safety/fatal_road_crash_database.
