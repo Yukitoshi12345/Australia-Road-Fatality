@@ -48,11 +48,11 @@ This project utilises an Excel dataset to analyze road fatalities in Australia, 
 
 ## Results
 
-<b> Q1: What is the general trend for road fatalities in Australia over the past 35 years? </b>
+<b> Q1: What is the general trend for fatal crashes in Australia over the past 35 years? </b>
 
 ![](images/road_fatalities_trend.png)
 
-The graph shows the trend of total road crashes in Australia from 1989 to 2023, with a clear overall downward trend in the number of crashes. Below is a detailed summary and analysis based on the visualisation:
+The graph shows the trend of total fatal crashes in Australia from 1989 to 2023 (excluding 2024). The analysis also includes a smoothed 3‑year moving average and a log‑linear fitted trend, which both reinforce the clear long‑run decline. Below is a detailed summary and analysis based on the visualisation:
 
 1. Significant Decrease in Road Crashes Over Time:
 
