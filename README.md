@@ -261,28 +261,35 @@ Highways and local roads continue to see the majority of fatalities, emphasising
 
 <br>
 
-<b>Q4: In Sydney, did the implementation of road safety measures lead to a significant reduction in road fatalities?</b>
+<b>Q4: In NSW, did major road safety policies reduce fatal crashes?</b>
 
-To assess the effectiveness of major road safety interventions in Sydney, we analysed annual road fatality data from 1989 to 2023. Over this 35-year period, several key policy changes were implemented, including the introduction of speed cameras and double demerit points in the late 1990s, followed by random roadside drug testing (RDT) in 2006. The following graph segments the fatality data into three distinct eras based on these interventions, allowing us to observe how road fatalities have changed in response to each policy phase.
+Scope: Monthly fatal crash counts, New South Wales (NSW), 1989–2023 (2024 excluded).
 
-![](images/road_fatalities_policy_era.png)
+Method (interrupted time-series):
 
-Pre-1997 Period:
+- Fit a segmented regression to monthly counts with two policy breakpoints:
+  - 1997: speed cameras + double demerit points
+  - 2006: random roadside drug testing (RDT)
+- Controls: month fixed effects (seasonality) and a linear time trend; optionally include an exposure offset for month length and population if available.
+- Report level and slope changes at each breakpoint with 95% CIs and p-values.
 
-From 1989 to 1996, Sydney experienced relatively high fatality numbers, with several years exceeding 600 deaths annually and peaking at over 900 in 1989. This period reflects the state before major interventions like speed cameras or double demerit enforcement. While there was a gradual decline throughout the early 1990s, the overall fatality count remained concerningly high, suggesting that existing policies were insufficient to achieve substantial reductions.
+Primary visual (notebook): monthly series with 12‑month moving average, fitted segmented trend, and vertical markers at 1997 and 2006. Secondary visual: annual era bars for context.
 
-Post-Speed Camera and Double Demerit Period (1997–2005):
+Notebook figure: ![](images/q4_nsw_segmented_trend.png)
 
-The orange bars represent the period following the introduction of speed cameras and double demerit points. During this phase, a clear downward trend is observed. Fatality numbers dropped below 600 and continued declining to near or below 500 in the early 2000s. This suggests a strong initial impact of these enforcement policies, likely due to increased driver caution and improved compliance with speed limits during holiday periods.
+Findings (summary):
 
-Post-Random Drug Testing (2006 Onwards):
+- Long‑run downward trend persists after controlling for seasonality.
+- Post‑1997: immediate level decrease and a steeper negative slope (evidence of added enforcement effect).
+- Post‑2006: further decrease and continued negative slope (consistent with incremental effect of RDT).
+- See notebook Q4 cell outputs for exact coefficients, CIs and p‑values.
 
-From 2006 onwards (green bars), a further and more consistent decline in fatalities can be seen, with numbers stabilizing between approximately 300 and 400 deaths annually, and even dipping below 300 in recent years (e.g., during the COVID period). This indicates that additional enforcement measures, like random drug testing, likely compounded the impact of earlier interventions and contributed to continued improvements in road safety.
+Limitations:
 
-Conclusion:
-
-Overall, the chart demonstrates that each phase of safety intervention, particularly the introduction of speed enforcement and drug testing, coincided with a meaningful reduction in road fatalities. While other external factors (like advancements in vehicle safety or temporary COVID-related traffic reductions) may have influenced the recent lows, the long-term trend strongly supports the conclusion that Sydney’s road safety measures have been effective in significantly reducing road fatalities over the last three decades.
-<br>
+- Observational design; unmeasured confounders (vehicle tech, macro trends) may drive part of the effect.
+- Per‑capita exposure not modeled unless population offset is added.
+- Specification assumes log‑linear segments; alternative changepoint choices could be explored.
+  <br>
 
 <b> Q5: Which factors most strongly explain fatal crash counts in Australia? </b>
 
